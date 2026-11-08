@@ -1,0 +1,20 @@
+# Build artefacts and local scratch files
+_build/
+*.zip
+*.log
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Node (only used for JS linting during development)
+node_modules/
+package-lock.json
+
+# Agent / tooling folders
+.zwork/
+.zwork-*

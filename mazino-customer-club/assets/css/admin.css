@@ -1,0 +1,508 @@
+/**
+ * Mazino Customer Club – admin styles.
+ */
+
+.mcc-admin {
+	--mcc-brand: #6d5efc;
+	--mcc-brand-2: #8b5cf6;
+	--mcc-ink: #17233b;
+	--mcc-soft: #667085;
+	--mcc-line: #e5e9f2;
+}
+
+.mcc-admin .mcc-admin-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 23px;
+	font-weight: 700;
+}
+
+.mcc-admin .mcc-admin-logo {
+	width: 28px;
+	height: 28px;
+	border-radius: 7px;
+	display: block;
+}
+
+.mcc-admin .mcc-version {
+	margin-inline-start: 8px;
+	padding: 2px 9px;
+	border-radius: 20px;
+	background: #f0eefe;
+	color: #5a4bea;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.9;
+}
+
+/* ---------- stats ---------- */
+
+.mcc-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	gap: 14px;
+	margin: 18px 0 20px;
+	max-width: 760px;
+}
+
+.mcc-stat {
+	background: #fff;
+	border: 1px solid var(--mcc-line);
+	border-radius: 12px;
+	padding: 14px 16px;
+	box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.mcc-stat-label {
+	display: block;
+	font-size: 12px;
+	color: var(--mcc-soft);
+	margin-bottom: 4px;
+}
+
+.mcc-stat-value {
+	display: block;
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--mcc-ink);
+	line-height: 1.4;
+}
+
+/* ---------- toolbar ---------- */
+
+.mcc-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	margin-bottom: 14px;
+}
+
+.mcc-search-form,
+.mcc-export-form {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.mcc-search-form input[type="search"] {
+	min-width: 250px;
+}
+
+.mcc-export-label {
+	font-size: 12px;
+	color: var(--mcc-soft);
+}
+
+/* ---------- table ---------- */
+
+.mcc-table-form {
+	background: #fff;
+	border: 1px solid var(--mcc-line);
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.mcc-table-tools {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 14px;
+	border-bottom: 1px solid var(--mcc-line);
+	background: #fbfcfe;
+	flex-wrap: wrap;
+}
+
+.mcc-table-count {
+	margin-inline-start: auto;
+	font-size: 12px;
+	color: var(--mcc-soft);
+}
+
+.mcc-table.wp-list-table {
+	border: 0;
+	box-shadow: none;
+	margin: 0;
+}
+
+.mcc-table thead th {
+	background: #f6f8fc;
+	border-bottom: 1px solid var(--mcc-line);
+	font-size: 12.5px;
+	font-weight: 700;
+	color: #475467;
+}
+
+.mcc-table thead th a {
+	color: inherit;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.mcc-table thead th a:hover {
+	color: var(--mcc-brand);
+}
+
+.mcc-arrow {
+	font-size: 9px;
+	color: var(--mcc-brand);
+}
+
+.mcc-table tbody td,
+.mcc-table tbody th {
+	padding: 13px 12px;
+	vertical-align: middle;
+	border-top: 1px solid #f0f3f9;
+}
+
+.mcc-table tbody tr:first-child td,
+.mcc-table tbody tr:first-child th {
+	border-top: 0;
+}
+
+.mcc-table tbody tr:hover {
+	background: #fafbff;
+}
+
+.mcc-table .check-column {
+	width: 36px;
+	padding-inline-start: 12px;
+}
+
+.mcc-table .mcc-cell-name {
+	width: 26%;
+}
+
+.mcc-row-actions {
+	visibility: hidden;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.mcc-table tbody tr:hover .mcc-row-actions,
+.mcc-table tbody tr:focus-within .mcc-row-actions {
+	visibility: visible;
+}
+
+.mcc-delete {
+	color: #b42318 !important;
+	text-decoration: none;
+}
+
+.mcc-phone {
+	direction: ltr;
+	display: inline-block;
+	letter-spacing: 0.4px;
+	font-variant-numeric: tabular-nums;
+	text-decoration: none;
+	color: var(--mcc-ink);
+}
+
+.mcc-phone:hover {
+	color: var(--mcc-brand);
+}
+
+.mcc-badge {
+	display: inline-block;
+	margin-inline-start: 6px;
+	padding: 1px 8px;
+	border-radius: 20px;
+	background: #f0eefe;
+	color: #5a4bea;
+	font-size: 11px;
+	vertical-align: middle;
+}
+
+.mcc-muted {
+	color: #98a2b3;
+}
+
+.mcc-date-cell {
+	display: block;
+	font-variant-numeric: tabular-nums;
+}
+
+.mcc-date-cell .mcc-time {
+	display: inline-block;
+	margin-inline-start: 6px;
+	color: #98a2b3;
+	font-size: 11px;
+}
+
+.mcc-source {
+	display: block;
+	max-width: 260px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #98a2b3;
+	font-size: 11px;
+	direction: ltr;
+	text-align: right;
+}
+
+/* ---------- empty state ---------- */
+
+.mcc-empty {
+	background: #fff;
+	border: 1px dashed #d6dded;
+	border-radius: 14px;
+	padding: 44px 24px;
+	text-align: center;
+}
+
+.mcc-empty .dashicons {
+	font-size: 42px;
+	width: 42px;
+	height: 42px;
+	color: #c3cbe0;
+	margin-bottom: 10px;
+}
+
+.mcc-empty h2 {
+	margin: 0 0 8px;
+	font-size: 17px;
+	color: var(--mcc-ink);
+}
+
+.mcc-empty p {
+	margin: 0;
+	color: var(--mcc-soft);
+	font-size: 13px;
+}
+
+/* ---------- pagination ---------- */
+
+.mcc-pagination {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 12px 14px;
+	border-top: 1px solid var(--mcc-line);
+	flex-wrap: wrap;
+}
+
+.mcc-page {
+	display: inline-block;
+	min-width: 32px;
+	height: 30px;
+	line-height: 28px;
+	padding: 0 10px;
+	text-align: center;
+	border: 1px solid var(--mcc-line);
+	border-radius: 8px;
+	background: #fff;
+	color: #344054 !important;
+	text-decoration: none;
+	font-size: 12.5px;
+}
+
+.mcc-page:hover {
+	border-color: var(--mcc-brand);
+	color: var(--mcc-brand) !important;
+}
+
+.mcc-page.is-current {
+	background: var(--mcc-brand);
+	border-color: var(--mcc-brand);
+	color: #fff !important;
+	font-weight: 700;
+}
+
+.mcc-page-gap {
+	color: #98a2b3;
+	padding: 0 2px;
+}
+
+.mcc-page-total {
+	margin-inline-start: auto;
+	font-size: 12px;
+	color: var(--mcc-soft);
+}
+
+/* ---------- help ---------- */
+
+.mcc-admin .mcc-help {
+	max-width: 760px;
+	margin-top: 26px;
+	padding: 18px 20px;
+	background: #fff;
+	border: 1px solid var(--mcc-line);
+	border-inline-start: 4px solid var(--mcc-brand);
+	border-radius: 10px;
+}
+
+.mcc-admin .mcc-help h2 {
+	margin-top: 0;
+	font-size: 15px;
+}
+
+.mcc-admin .mcc-help p {
+	margin: 0 0 8px;
+	color: #475467;
+	font-size: 13px;
+	line-height: 1.9;
+}
+
+.mcc-admin .mcc-help code {
+	background: #f4f6fb;
+	padding: 2px 6px;
+	border-radius: 4px;
+	direction: ltr;
+	display: inline-block;
+}
+
+/* ---------- about ---------- */
+
+.mcc-about {
+	max-width: 980px;
+}
+
+.mcc-about-hero {
+	margin: 18px 0 20px;
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 18px 40px -26px rgba(16, 24, 40, 0.6);
+	line-height: 0;
+}
+
+.mcc-about-hero img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.mcc-about-grid {
+	display: grid;
+	grid-template-columns: 1.2fr 1fr;
+	gap: 16px;
+	align-items: start;
+}
+
+@media (max-width: 900px) {
+	.mcc-about-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.mcc-card-block {
+	background: #fff;
+	border: 1px solid var(--mcc-line);
+	border-radius: 14px;
+	padding: 18px 20px;
+	box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.mcc-brand-card {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	grid-row: span 2;
+}
+
+.mcc-about-logo {
+	width: 96px;
+	height: 96px;
+	border-radius: 20px;
+	box-shadow: 0 12px 26px -14px rgba(23, 35, 59, 0.55);
+	display: block;
+	flex: 0 0 auto;
+}
+
+.mcc-brand-text h2 {
+	margin: 0 0 6px;
+	font-size: 19px;
+	color: var(--mcc-ink);
+}
+
+.mcc-brand-text p {
+	margin: 0;
+	color: var(--mcc-soft);
+	font-size: 13px;
+	line-height: 1.9;
+}
+
+.mcc-card-block h3 {
+	margin: 0 0 12px;
+	font-size: 14px;
+	color: var(--mcc-ink);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.mcc-card-block h3::before {
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.mcc-info-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.mcc-info-list li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 9px 0;
+	border-bottom: 1px dashed #eef1f7;
+	font-size: 13px;
+}
+
+.mcc-info-list li:last-child {
+	border-bottom: 0;
+}
+
+.mcc-info-label {
+	color: var(--mcc-soft);
+}
+
+.mcc-info-list a {
+	color: var(--mcc-brand);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.mcc-info-list a:hover {
+	text-decoration: underline;
+}
+
+.mcc-about-text {
+	margin: 0 0 12px;
+	font-size: 13px;
+	line-height: 2;
+	color: #475467;
+}
+
+.mcc-about-meta {
+	display: flex;
+	gap: 14px;
+	flex-wrap: wrap;
+	margin: 0;
+	font-size: 12px;
+	color: var(--mcc-soft);
+}
+
+.mcc-about-footer {
+	margin-top: 22px;
+	font-size: 12px;
+	color: var(--mcc-soft);
+}
+
+.mcc-about-footer a {
+	color: var(--mcc-brand);
+	text-decoration: none;
+	font-weight: 600;
+}
