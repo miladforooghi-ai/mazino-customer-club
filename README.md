@@ -96,7 +96,14 @@
 > اگر از المنتور استفاده نمی‌کنید، افزونه با شورت‌کد `[mazino_customer_club]` هم کار می‌کند.
 
 ---
+## 🎥 آموزش نصب و استفاده
 
+برای آشنایی با نحوه نصب، راه‌اندازی و استفاده از افزونه Mazino Customer Club، ویدیوی آموزشی زیر را مشاهده کنید:
+
+[![آموزش نصب و استفاده از افزونه Mazino Customer Club](https://img.youtube.com/vi/gWvJ13TeCek&t=42s/maxresdefault.jpg)](https://www.youtube.com/watch?v=gWvJ13TeCek&t=42s)
+
+▶️ **[مشاهده آموزش کامل در یوتیوب](https://www.youtube.com/watch?v=VIDEO_ID)**
+---
 ## نصب افزونه
 
 ### روش ۱ — از فایل ZIP (پیشنهادی)
